@@ -59,3 +59,27 @@ p{
 #clear{
     background: #FC9CA5;
 }
+
+.back-to-main{
+    position: relative;
+    clear: both;
+    text-align: center;
+    top: 50px;
+    margin-bottom: 20px;
+}
+.back-to-main > a{
+    text-decoration: none;
+    color: red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.back-to-main > a:hover{
+    color: white;
+    background-color: red;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius: 5px;
+}
