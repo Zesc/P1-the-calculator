@@ -1,73 +1,81 @@
-body{
-    background: #73A5BB;
+body {
+    background: #fff;
+    box-sizing: border-box;
 }
 
-.calculator{
-    position: relative;
-    width: 320px;
-    height: 450px;
-    background: #179585;
+.calculator {
+    width: 200px;
+    height: auto;
+    background: black;
     margin: 0px auto;
-    top: 40px;
-    border-radius: 3px;
-    padding: 10px;
 }
 
-#display{
+#display {
+    width: 200px;
     position: relative;
-    width: 300px;
-    height: 100px;
-    margin: 0 auto;
-    background: rgba(207, 207, 207, 0.89);
-    top: 5px;
-    border-radius: 3px;
+    display: block;
+}
+
+#display > input {
+    width: 96%;
+    height: 60px;
+    border-width: 0;
+    font-size: 2em;
+    border: none;
+    padding: 0;
+    padding: 2%;
+    color: #fff;
+    background-color: #000;
 }
 
 #keys {
     position: relative;
-    top: 15px;
+    width: 200px;
+    height: auto;
+    margin: 0;
 }
 
-a{
+.rows {
     position: relative;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 30px;
-    text-align: center;
-    color: rgba(81, 81, 81, 0.96);
+    width: 200px;
+    height: auto;
 }
 
-p{
-    position: relative;
+button {
+    padding: 0;
+    border: 1px solid #013d3a;
+    margin: 0 -4px 0 0;
+    background-color: #414751;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.btn-n {
+    width: 50px;
     height: 50px;
-    padding: 2px 5px;
-}
-.btn.one{
-    margin: 10px 8px;
-    background: #FEF0F4;
 }
 
-.btn.two{
-    margin: 5px 13px;
-    background: #FEF0F4;
+.btn-bg{
+    width: 100px;
+    height: 50px;
 }
 
-#equal{
-    background: #F1FD98;
+#eql{
+    background-color: #66f4b2;
 }
 
-#clear{
-    background: #FC9CA5;
+#clear {
+    background-color: #f94848;
 }
 
-.back-to-main{
+.back-to-main {
     position: relative;
     clear: both;
     text-align: center;
     top: 50px;
     margin-bottom: 20px;
 }
-.back-to-main > a{
+.back-to-main > a {
     text-decoration: none;
     color: red;
     border-left: 1px solid red;
@@ -76,7 +84,7 @@ p{
     padding: 10px;
 }
 
-.back-to-main > a:hover{
+.back-to-main > a:hover {
     color: white;
     background-color: red;
     -webkit-border-radius:;
