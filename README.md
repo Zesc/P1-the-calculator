@@ -1,1 +1,3 @@
-# Project 5: The Calculator
+# Introduction to CSS
+
+## Project Assignment 1: The Calculator

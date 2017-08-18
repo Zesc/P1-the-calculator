@@ -7,7 +7,7 @@ body {
     width: 200px;
     height: auto;
     background: black;
-    margin: 0px auto;
+    margin: 30px auto 0 auto;
 }
 
 #display {
@@ -48,6 +48,12 @@ button {
     background-color: #414751;
     font-size: 1.2em;
     color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #545c6b;
+    cursor: pointer;
 }
 
 .btn-n {
@@ -62,10 +68,20 @@ button {
 
 #eql{
     background-color: #66f4b2;
+    transition: background-color 0.3s;
+}
+
+#eql:hover {
+    background-color: #0cff8d;
 }
 
 #clear {
     background-color: #f94848;
+    transition: background-color 0.3s;
+}
+
+#clear:hover {
+    background-color:  #ff0c0c;
 }
 
 .back-to-main {
