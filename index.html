@@ -3,42 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
     <title>Project 5: The Calculator</title>
 </head>
 <body>
     <div class="calculator">
         <div id="display">
-            <input type="text" name="calculator display">
         </div>
         <div id="keys">
             <div class='rows'>
-                <button value="" class="btn-n" id="clear">C</button>
-                <button value="plusMinus" class="btn-n">+/-</button> 
-                <button value='%' class="btn-n">%</button>
-                <button value='/' class="btn-n">/</button>           
+                <button onClick='buttonClear()' value="" class="btn-n" id="clear">C</button>
+                <button value="delete" class="btn-n">DEL</button> 
+                <button onClick="getValue(this)" value='%' class="btn-n">%</button>
+                <button onClick="getValue(this)" value='/' class="btn-n">/</button>           
             </div>
-            <div>
-                <button value="7" class="btn-n">7</button>
-                <button value="8" class="btn-n">8</button>
-                <button value="9" class="btn-n">9</button>
-                <button value="x" class="btn-n">x</button>
+            <div class="rows">
+                <button onClick='getValue(this)' id='seven' value="7" class="btn-n">7</button>
+                <button onClick='getValue(this)' id='eight' value="8" class="btn-n">8</button>
+                <button onClick='getValue(this)' id="nine" value="9" class="btn-n">9</button>
+                <button onClick='getValue(this)' value="x" class="btn-n">x</button>
             </div>
-            <div>
-                <button value="4" class="btn-n">4</button>
-                <button value="5" class="btn-n">5</button>
-                <button value="6" class="btn-n">6</button>
-                <button value="-" class="btn-n">-</button>
+            <div class="rows">
+                <button onClick='getValue(this)' value="4" class="btn-n numb">4</button>
+                <button onClick='getValue(this)' value="5" class="btn-n numb">5</button>
+                <button onClick='getValue(this)' value="6" class="btn-n numb">6</button>
+                <button onClick='getValue(this)' value="-" class="btn-n">-</button>
             </div>
-            <div>
-                <button value="1" class="btn-n">1</button>
-                <button value="2" class="btn-n">2</button>
-                <button value="3" class="btn-n">3</button>
-                <button value="+" class="btn-n">+</button>
+            <div class="rows">
+                <button onClick='getValue(this)' value="1" class="btn-n numb">1</button>
+                <button onClick='getValue(this)' value="2" class="btn-n numb">2</button>
+                <button onClick='getValue(this)' value="3" class="btn-n numb">3</button>
+                <button onClick='getValue(this)' value="+" class="btn-n">+</button>
             </div>
-            <div>
-                <button value="0" class='btn-bg'>0</button>
+            <div class="rows">
+                <button onClick="getValue(this)" value="0" class='btn-bg numb'>0</button>
                 <button value="." class='btn-n'>.</button>
-                <button id='eql' value="=" class="btn-n">=</button>
+                <button onClick="eql()" id='eql' value="=" class="btn-n">=</button>
             </div>
         </div>
     </div>

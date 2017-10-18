@@ -14,19 +14,13 @@ body {
     width: 200px;
     position: relative;
     display: block;
+    height: 30px;
+    color: white;
+    font-size: 30px;
+    padding: 15px 0 15px 5px;
 }
 
-#display > input {
-    width: 96%;
-    height: 60px;
-    border-width: 0;
-    font-size: 2em;
-    border: none;
-    padding: 0;
-    padding: 2%;
-    color: #fff;
-    background-color: #000;
-}
+
 
 #keys {
     position: relative;
@@ -54,6 +48,10 @@ button {
 button:hover {
     background-color: #545c6b;
     cursor: pointer;
+}
+
+button:active, button:focus {
+    outline-style: none;
 }
 
 .btn-n {
